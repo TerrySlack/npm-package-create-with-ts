@@ -1,0 +1,29 @@
+{
+  "compilerOptions": {
+    "outDir": "lib/esm", //This is for our default es module build
+    "module": "esnext",
+    "target": "es5",
+    "lib": ["dom", "ESNEXT"],
+    "jsx": "react-jsx",
+    "declaration": true,
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "esModuleInterop": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "noImplicitAny": true,
+    "strictNullChecks": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "allowSyntheticDefaultImports": true,
+    "skipLibCheck": true,
+    "types": [
+      "jest",
+      "@types/jest",
+      "node",
+      "@types/node"
+    ] /* Type declaration files to be includedyarn in compilation. */
+  },
+  "include": ["src"],
+  "exclude": ["node_modules", "lib"]
+}
